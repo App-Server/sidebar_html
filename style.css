@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.bi {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.navtop {
+    background-color: #f1f1f1;
+    height: 6vh;
+    position: fixed;
+    /* Fixa a posição do elemento */
+    top: 0;
+    /* Define a posição inicial a partir do topo */
+    left: 0;
+    /* Define a posição inicial a partir da esquerda */
+    width: 100%;
+    /* Define a largura do elemento como 100% da largura da tela */
+}
+
+.sidebar {
+    margin-top: 30px;
+    width: 220px;
+    background-color: #f9fafb;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar-grid {
+    margin-top: 40px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.conteudo {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/* Estilos para telas maiores que 700px */
+@media screen and (min-width: 700px) {
+    .navresponse {
+        display: none;
+        /* Oculta a navegação */
+    }
+}
+
+/* Estilos para telas menores ou iguais a 700px */
+@media screen and (max-width: 700px) {
+    .navresponse {
+        display: block;
+        /* Exibe a navegação */
+    }
+}
